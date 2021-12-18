@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Recipe Card</title>
   </head>
-  <body>
+  <body class="background-blue">
     <main class="flex column">
       <div class="top flex row between">
         <section class="flex column center sml-btm-brdr">
@@ -13,7 +13,7 @@
           <p>Placed on: 11/12/2021</p>
         </section>
         <section class="flex column center">
-          <p class="bold blue">View Details</p>
+          <p class="bold text-blue">View Details</p>
         </section>
       </div>
       <div class="middle flex row">
@@ -29,7 +29,20 @@
           <img class="img" src="images/thestandingdesk.jpg" alt="standing desk ad">
         </section>
       </div>
-      <div class="bottom flex row"></div>
+      <div class="bottom flex row even">
+        <section class="flex column center">
+          <div class="circle background-blue border-blue marg-top">1</div>
+          <p>Placed</p>
+        </section>
+        <section class="flex column center">
+          <div class="circle border-blue marg-top">2</div>
+          <p>Shipped</p>
+        </section>
+        <section class="flex column center">
+          <div class="circle border-blue marg-top">3</div>
+          <p>Delivered</p>
+        </section>
+      </div>
     </main>
   </body>
 </html>
