@@ -9,7 +9,6 @@ body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  background-color: #74b9ff;
 }
 
 main {
@@ -47,17 +46,21 @@ main {
   justify-content: space-between;
 }
 
+.even {
+  justify-content: space-evenly;
+}
+
 .top {
   height: 15%;
   border-bottom: dashed 1px black;
 }
 
 .middle {
-  height: 55%;
+  height: 60%;
 }
 
 .bottom {
-  height: 30%;
+  height: 25%;
   border-top: dashed 1px black;
 }
 
@@ -88,6 +91,29 @@ img {
   font-weight: 700;
 }
 
-.blue {
+.text-blue {
   color: #0984e3;
+}
+
+.background-blue {
+  background-color: #74b9ff;
+}
+
+.border-blue {
+  border: 3px solid #74b9ff;
+}
+
+.marg-top {
+  margin-top: 5px;
+}
+
+.circle {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 190%;
+  font-size: 35px;
 }
