@@ -7,7 +7,8 @@ body {
 }
 
 img {
-  height: 100%;
+  height: 200px;
+  width: auto;
 }
 
 h1 {
@@ -27,6 +28,11 @@ p {
   margin: 0;
 }
 
+li {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
 .background-blue {
   background-color: #74b9ff;
 }
@@ -40,7 +46,7 @@ p {
 }
 
 /* flip the pane when hovered */
-.flip-container:hover .flipper,
+.flip-container:active .flipper,
 .flip-container.hover .flipper {
   transform: rotateY(180deg);
 }
@@ -121,6 +127,10 @@ p {
 
 .width-50 {
   width: 50%;
+}
+
+.height-50 {
+  height: 50%;
 }
 
 .height-85 {
@@ -251,5 +261,102 @@ p {
 
   100% {
     transform: translateX(0);
+  }
+}
+
+.image {
+    -webkit-animation: fadeInRight 2s ease-in-out;
+    /* Chrome, Safari, Opera */
+    animation: fadeInRight 2s ease-in-out;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.order1 {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: order1 2s steps(30, end) 1s 1 normal both;
+}
+
+@keyframes order1 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 472px;
+  }
+}
+
+.order2 {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: order2 2s steps(30, end) 1s 1 normal both;
+  animation-delay: 2s;
+}
+
+@keyframes order2 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 472px;
+  }
+}
+
+.order3 {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: order3 2s steps(30, end) 1s 1 normal both;
+  animation-delay: 3s;
+}
+
+@keyframes order3 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 472px;
+  }
+}
+
+.order4 {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: order4 2s steps(30, end) 1s 1 normal both;
+  animation-delay: 2.5s;
+}
+
+@keyframes order4 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 150px;
   }
 }
