@@ -1,0 +1,255 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+img {
+  height: 100%;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+h2 {
+  color: #0984e3;
+  /* font-weight: normal; */
+}
+
+p {
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.background-blue {
+  background-color: #74b9ff;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+  padding: 2%;
+  perspective: 1000px;
+  background: white;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  height: 450px;
+  width: 650px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.even {
+  justify-content: space-evenly;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.top {
+  height: 15%;
+  border-bottom: 1px dashed black;
+}
+
+.middle {
+  height: 55%;
+  align-items: center;
+}
+
+.bottom {
+  height: 30%;
+  border-top: 1px dashed black;
+}
+
+.blue-back {
+  background-color: #74b9ff;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.height-85 {
+  height: 85%;
+}
+
+.circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 3px solid #74b9ff;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 180%;
+  font-size: 33px;
+  font-weight: lighter;
+}
+
+/* slide 1 */
+.slide1 {
+  -webkit-animation: slideIn 3s forwards;
+  -moz-animation: slideIn 3s forwards;
+  animation: slideIn 3s forwards;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* slide 2 */
+
+.slide2 {
+  -webkit-animation: slideIn2 2.5s forwards;
+  -moz-animation: slideIn2 2.5s forwards;
+  animation: slideIn2 2.5s forwards;
+}
+
+@-webkit-keyframes slideIn2 {
+  0% {
+    transform: translateX(-900px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideIn2 {
+  0% {
+    transform: translateX(-900px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn2 {
+  0% {
+    transform: translateX(-900px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* slide 3 */
+
+.slide3 {
+  -webkit-animation: slideIn2 2s forwards;
+  -moz-animation: slideIn2 2s forwards;
+  animation: slideIn2 2s forwards;
+}
+
+@-webkit-keyframes slideIn3 {
+  0% {
+    transform: translateX(-900px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideIn3 {
+  0% {
+    transform: translateX(-900px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn3 {
+  0% {
+    transform: translateX(-900px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
