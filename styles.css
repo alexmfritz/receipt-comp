@@ -65,7 +65,7 @@ main {
 }
 
 .info {
-  height: 90%;
+  height: 82%;
 }
 
 .half-width {
@@ -83,6 +83,7 @@ p {
 }
 
 img {
+  height: 85%;
   width: 100%;
   margin: auto;
 }
@@ -104,7 +105,7 @@ img {
 }
 
 .marg-top {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .circle {
