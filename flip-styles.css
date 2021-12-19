@@ -283,9 +283,8 @@ li {
 }
 
 .image {
-    -webkit-animation: fadeInRight 2s ease-in-out;
-    /* Chrome, Safari, Opera */
-    animation: fadeInRight 2s ease-in-out;
+  -webkit-animation: fadeInRight 3.5s ease-in-out;
+  animation: fadeInRight 3.5s ease-in-out;
 }
 
 @-webkit-keyframes fadeInRight {
@@ -376,5 +375,39 @@ li {
 
   to {
     width: 150px;
+  }
+}
+
+.order5 {
+  white-space: nowrap;
+  overflow-y: hidden;
+  animation: order5 2s steps(30, end) 1s 1 normal both;
+  animation-delay: 2.5s;
+}
+
+@keyframes order5 {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 195px;
+  }
+}
+
+.order6 {
+  white-space: nowrap;
+  overflow-y: hidden;
+  animation: order6 2s steps(30, end) 1s 1 normal both;
+  animation-delay: 2.5s;
+}
+
+@keyframes order6 {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 195px;
   }
 }
