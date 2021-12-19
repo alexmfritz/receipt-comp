@@ -137,6 +137,10 @@ li {
   height: 85%;
 }
 
+.sml-top-marg {
+  margin-top: 20px;
+}
+
 .circle {
   height: 60px;
   width: 60px;
@@ -149,6 +153,20 @@ li {
   line-height: 180%;
   font-size: 33px;
   font-weight: lighter;
+}
+
+.top-right-corner {
+  border-left: 1px dashed black;
+  border-bottom: 1px dashed black;
+}
+
+.btm-left-corner {
+  border-right: 1px dashed black;
+  border-top: 1px dashed black;
+}
+
+.sml-pad {
+  padding: 15px;
 }
 
 /* slide 1 */
